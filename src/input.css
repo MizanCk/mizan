@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+
+  a {
+    color: #035E7B;
+}
+
+
+
+
+
+main {
+  
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+
+
+.faqs-item {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+    border: 4px solid black;
+}
+
+.faqs-title {
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    padding-left: 27px;
+}
+
+.active,
+.faqs-title:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.faqs-title::after {
+  content: '\002B';
+  font-weight: normal;
+  float: right;
+  margin-right: auto;
+  font-size: 32px;
+  line-height: 1;
+  padding-left: -33px;
+  margin-left: -142px
+}
+
+
+.active:after {
+    content: "\2212";
+}
+
+.faqs-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faqs-content-inside {
+    padding: 20px;
+}
